@@ -1,0 +1,15 @@
+O que é o Docker?
+
+Gerenciar containers é uma tarefa difícil. O Docker é uma ferramenta que deixa a 
+tarefa de gerenciar containers muito mais fácil
+
+O Docker é uma ferramenta que deixa a tarefa de gerenciar containers muito mais fácil.
+
+Container 1        Container 2        Container 3
+App                   App                App
+Bin/lib              Bin/lib           Bin/lib   
+            Docker Engine
+            Servidor Físico 
+           Sistema operacional
+
+Docker Engine - Aplicação que gerencia containers por trás dos panos. 

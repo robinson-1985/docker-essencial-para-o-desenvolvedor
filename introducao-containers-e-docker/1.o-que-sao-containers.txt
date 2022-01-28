@@ -1,0 +1,15 @@
+O que são containers?
+
+Containers, conhecidos também por Containers Linux, são uma maneira de criar ambientes
+isolados que podem executar código enquanto compartilham um único sistema operacional.
+
+Container 1        Container 2        Container 3
+App                   App                App
+Bin/lib              Bin/lib           Bin/lib   
+            Servidor Físico 
+           Sistema operacional
+
+Cada container é completamente isolado dos outros.
+
+Servidor Físico / Sistema Operacional - Um computador qualquer, meu, seu, um servidor que você
+contrata, qualquer um mesmo.

@@ -1,0 +1,62 @@
+Máquina Virtual (VM)
+
+Ter uma Máquina Virtual significa que um disco rígido virtual foi criado dentro de um 
+ambiente físico por meio de um software específico e opera independentemente dele. Ter 
+um hardware dentro de outro possibilita rodar sistemas operacionais e todo o tipo de 
+programas.
+
+Esta é uma das grandes vantagens de ter uma Máquina Virtual, uma vez que você pode usar 
+as aplicações e os programas que precisar sem depender do sistema operacional que tem no 
+disco físico. Como você pode criar um ambiente virtual diferente dentro daquele que já 
+existe, fica livre para usar todos os programas de que precisa em uma mesma máquina.
+
+Por exemplo, se você precisar usar na sua operação um software que só roda no sistema X 
+e um outro que foi feito para o sistema operacional Y, a Máquina Virtual permitirá que 
+ambos funcionem simultaneamente, no mesmo ambiente. Se seu PC tiver o sistema X, basta 
+criar uma VM com o sistema Y, ou o contrário.
+
+Outro benefício deste modelo é que o isolamento de recursos permite que a Máquina Virtual 
+“engane” o software, que não detecta que está ativo porque não está rodando em um sistema 
+físico. Como não há interação entre a atuação física e a virtual, essa dinâmica permite 
+que os recursos originais, que não pertencem à máquina virtual, sejam poupados. Em outras 
+palavras, o que acontece na Máquina Virtual fica na Máquina Virtual.
+
+Sem ter de criar partições no HD para rodar múltiplos sistemas, o disco rígido físico 
+permanece intacto e você pode testar e criar no ambiente virtual sem se preocupar em 
+esgotar os recursos do seu dispositivo.
+
+Quando precisar movimentar sua Máquina Virtual entre os equipamentos ou quiser fazer um
+backup, o processo também é simples e rápido, o que poupa o trabalho da equipe e acelera
+o trabalho.
+
+Container
+
+Os Containers são tipos de ambiente nos quais é possível agrupar aplicações e seus elementos
+para melhorar tanto o trabalho da equipe de TI, que consegue trabalhar focada em um ambiente específico de uma aplicação, quanto para o funcionamento do software e do servidor, já que os recursos utilizados por cada Container são totalmente isolados.
+
+O que une o modelo de Container à Máquina Virtual é, principalmente, o fato de ambos utilizarem 
+a virtualização. O que muda aqui é que virtualização se dá no nível do sistema operacional e 
+os Containers não utilizam hypervisor como as Máquinas Virtuais, e sim os recursos do sistema 
+e processos de kernel para criar os ambientes. É isso o que impede o Container de ter uma visão 
+geral do ambiente físico fora de seu espaço, como a Máquina Virtual tem.
+
+Na prática, o Container promove a comunicação do hardware para o sistema operacional e
+diretamente para os containers, que cuidam do isolamento e da inicialização das aplicações. 
+Na Máquina Virtual o hardware se comunica com o hypervisor, e depois com a máquina. Já dentro 
+da VM haverá inicialização do sistema operacional e, só então, as aplicações estarão ativadas.
+
+Isso significa que tanto o Container como a VM trabalham com virtualização e isolamento 
+de ambientes para promover processamentos independentemente de aplicações, mas os Containers 
+criam ambientes isolados onde diferentes aplicações podem rodar simultaneamente, porque a 
+divisão é feita em nível de recursos disponíveis, como memória e processamento. Já a Máquina 
+Virtual permite que uma máquina física abrigue outras com sistemas operacionais diferentes, 
+discos rígidos e hardwares independentes dos originais.
+
+Uma das principais vantagens do Container é a possibilidade de criar serviços e códigos 
+independentes, que podem ser movidos sem dificuldade entre máquinas e ambientes diferentes 
+sem a perda de dados.
+
+Quando consideramos a segurança, o Container é um pouco menos robusto que a Máquina Virtual, 
+que ainda garante mais proteção ao usuário, mas, em compensação, sua operação tende a ser mais 
+rápida, uma vez que só as aplicações precisam ser iniciadas, e não todo o sistema operacional.
+
