@@ -1,0 +1,18 @@
+O que são Volumes em um container?
+
+Dado que containers por padrão não persistem dados, temos que usar recursos para 
+contornar esta situação. Este recurso são os Volumes
+Fazendo uso de Volumes, “expomos” arquivos e diretórios da nossa máquina para o 
+container.
+Desta forma, quando paramos o container todos os dados presentes no volume exporto
+é preservado e quando iniciamos novamente o container os dados estão todos disponíveis.
+
+Volumes são uma solução perfeita para nós, desenvolvedores, pois se antes, por exemplo, 
+tínhamos que instalar um servidor web e um banco de dados diretamente na nossa máquina 
+ou criar uma máquina virtual com estes servidores, agora podemos fazer uso de containers, 
+por exemplo, um para servidor web e um para banco de dados, e termos os arquivos de 
+desenvolvimento para trabalho local.
+
+OBS: Os arquivos/diretórios expostos estão na sua 
+máquina (host) e não no container. Desta forma qualquer modificação neles a persistência 
+é feita no seu computador e não no container.

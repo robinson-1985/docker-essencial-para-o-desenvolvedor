@@ -1,0 +1,24 @@
+O que são imagens em um container?
+
+Quando falamos de containers, imagens são ‘templates’ (modelos) na qual usamos para 
+criar containers. 
+
+Exemplo: 
+
+- Imagine uma aplicação que será desenvolvida com Python e banco de dados PostgreSQL 
+e será executada no servidor web Nginx. Podemos então criar 3 containers, sendo que: 
+- Um container irá usar uma imagem com a linguagem Python contendo suporte a se 
+comunicar com o banco de dados PostgreSQL; - Um container irá usar uma imagem com o 
+servidor de banco de dados PostgreSQL; - Um container irá usar uma imagem com o 
+servidor web Nginx;
+
+Atenção: Não confunda as imagens de containers com as imagens de serviço cloud como 
+Amazon AWS, Google Cloud Plaftorm e Microsoft Azure.
+
+OBS:
+Quando solicitamos ao docker criar um container baseado em alguma imagem esta imagem
+é procurada primeiro localmente e caso não encontrada o docker procura e caso encontre
+baixa do Docker Hub. Após criarmos um container a partir de uma imagem esta imagem fica
+armazenada no nosso computador local, e caso resolvamos criar um outro container com esta
+mesma imagem não será necessário baixá-la novamente, a não ser que você tenha deletado 
+a imagem.

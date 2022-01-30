@@ -1,0 +1,21 @@
+Os containers não persistem dados
+
+Até então aprendemos a criar containers através de imagens no Docker.
+
+Mas até o momento não tentamos persistir dados dentro de um container. Mas o que 
+queremos dizer com persistir dados?
+
+Persistência de dados
+
+Quando falamos em persistir dados estamos falando em fazer alterações (inserir, editar) 
+dados no sistema de arquivos do container. Por exemplo, o que ocorre se criarmos um 
+container, criarmos um arquivo dentro deste container com um texto e então pararmos o 
+container e iniciarmos o container novamente?
+
+Se a imagem na qual o container foi criado não contém por padrão persistência de dados 
+habilitada, o conteúdo criado será perdido.
+
+Qual a solução para o problema de não persistência de dados nos containers?
+
+A solução para persistência de dados em containers são os Volumes, também chamados de 
+Volume de Dados. 
