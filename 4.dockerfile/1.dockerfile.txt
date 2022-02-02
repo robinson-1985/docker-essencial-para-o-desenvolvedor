@@ -1,0 +1,21 @@
+Na seção pasada os comandos para criar containers foram ficando maiores e mais complexos 
+conforme um dos containers que criamos mostrado abaixo:
+
+docker run --name "servidor_web" -d -p 8080:80 -e NGINX_ENTRYPOINT_QUIET_LOGS=1 -v 
+"/home/robinson/projects/docker-essencial-para-o-desenvolvedor/secao06:/usr/share/nginx/html" 
+nginx:1.19.4-alpine
+
+
+Ainda após a criação do container possa ser que queiramos instalar ferramentas, pacotes ou 
+realizar configurações e este processo todo manual se torna lento. A tendência é realmente 
+que usemos mais e mais parâmetros para informar ao Docker tudo que precisamos para os nossos
+container. Isso dificulta a criação e manutenção de containers. Para resolver este problema
+usamos o Dockerfile
+
+O que é um Dockerfile?
+
+Um Dockerfile nada mais é do que um documento texto, no formato YAML, com pequenas instruções 
+que são usadas pelo Docker para gerar uma imagem baseada nas instruções do documento. Com esta 
+imagem criamos nosso container.
+Esta imagem gerada a partir do nosso Dockerfile serve também para que publiquemos na nossa conta 
+no Docker Hub e desta forma possamos distribuir esta imagem facilmente para outras pessoas.
